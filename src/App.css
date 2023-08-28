@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+.Edit{
+  border: 1px solid black;
+}
+#newuser{
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+#newuser{
+  background-color: aliceblue;
+  border-radius: 10px;
+}
