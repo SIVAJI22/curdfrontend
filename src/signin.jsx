@@ -65,7 +65,7 @@ return(
          
          <button onClick={sumbit} className="btn btn-primary">sign-in</button>
             <div className="mt-4 ms-2 btn btn-success">
-<Link to={'/pusers'} style={{textDecoration:'none' ,color:'white'}}>Don,t have account create now</Link>
+<Link to={'/home'} style={{textDecoration:'none' ,color:'white'}}>Don,t have account create now</Link>
 </div>
 <div className="mt-4 ms-2 btn btn-danger">
 <Link to='/admin' style={{textDecoration:'none',color:'white'}}>Sign-in admin account</Link></div>
