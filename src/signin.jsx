@@ -28,7 +28,7 @@ export const Signin=()=>{
 
     const sumbit=()=>{
         console.log(signin);
-        axios.post('http://localhost:5000/newusers/login',signin).then((response)=>{
+  axios.post('https://curd-u5k5.onrender.com/newusers/login',signin).then((response)=>{
            console.log(response.data);
     
         if(response.data.status === 'success'){
@@ -65,7 +65,7 @@ return(
          
          <button onClick={sumbit} className="btn btn-primary">sign-in</button>
             <div className="mt-4 ms-2 btn btn-success">
-<Link to={'/pusers'} style={{textDecoration:'none' ,color:'white'}}>Don,t have account create now</Link>
+<Link to={'/home'} style={{textDecoration:'none' ,color:'white'}}>Don,t have account create now</Link>
 </div>
 <div className="mt-4 ms-2 btn btn-danger">
 <Link to='/admin' style={{textDecoration:'none',color:'white'}}>Sign-in admin account</Link></div>

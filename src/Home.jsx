@@ -29,7 +29,7 @@ export const Home=()=>{
 
     const sumbit=()=>{
         console.log(Newusers);
-        axios.post('http://localhost:5000/newusers/users',Newusers).then((response)=>{
+        axios.post('https://curd-u5k5.onrender.com/newusers/users',Newusers).then((response)=>{
            
     
         console.log(response.data.status)

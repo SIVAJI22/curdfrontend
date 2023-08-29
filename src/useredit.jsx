@@ -18,7 +18,7 @@ const getuser=useNavigate();
 
     useEffect(()=>{
         if(params.id){
-            axios.get('http://localhost:5000/newusers/'+params.id).then((response)=>{
+            axios.get('https://curd-u5k5.onrender.com/newusers/'+params.id).then((response)=>{
 console.log(response.data);
 seteditusers(response.data.data)
 
@@ -38,7 +38,7 @@ seteditusers(response.data.data)
        }
        const onclick=()=>{
         console.log(editusers );
-        axios.put(`http://localhost:5000/newusers/${params.id}`,editusers).then((response)=>{
+        axios.put(`https://curd-u5k5.onrender.com/newusers/${params.id}`,editusers).then((response)=>{
             console.log(response.data);
             alert('user update successfully')
             getuser('/users')
