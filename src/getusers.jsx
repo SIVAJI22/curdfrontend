@@ -11,6 +11,7 @@ export const  Getuser=()=>{
     },[])
     const getting=()=>{
         axios.get('https://curd-u5k5.onrender.com/newusers/userget').then((response)=>{
+
             console.log(response.data.data);
             setusers(response.data.data)
             // console.log(users);
@@ -21,7 +22,9 @@ export const  Getuser=()=>{
     const handledelete=(id)=>{
   
     
+
         axios.delete(`https://curd-u5k5.onrender.com/newusers/${id}`)
+
         .then(function (response){
           console.log(response.data)
      
