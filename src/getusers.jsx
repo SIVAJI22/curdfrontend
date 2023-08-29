@@ -10,7 +10,7 @@ export const  Getuser=()=>{
         getting()
     },[])
     const getting=()=>{
-        axios.get('http://localhost:5000/newusers/userget').then((response)=>{
+        axios.get('http://localhost:10000/newusers/userget').then((response)=>{
             console.log(response.data.data);
             setusers(response.data.data)
             // console.log(users);
@@ -21,7 +21,7 @@ export const  Getuser=()=>{
     const handledelete=(id)=>{
   
     
-        axios.delete(`http://localhost:5000/newusers/${id}`)
+        axios.delete(`http://localhost:10000/newusers/${id}`)
         .then(function (response){
           console.log(response.data)
      
